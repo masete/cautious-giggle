@@ -1,4 +1,4 @@
-datas= [
+const people= [
     {
       id: 1,
       name: 'Bertie Yates',
