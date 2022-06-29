@@ -2,19 +2,31 @@ import './index.scss'
 // import { useState } from 'react';
 import data from './data'
 
-const Birthday = (props) =>{
-    const people = () =>{
-        {props.name} = props;
-    }
+const Birthday = () =>{
+
     return(
         <main>
             <div className='container'>
-                <h2>Todays birthday</h2>
-                 <h5> {data.name} </h5>
-                <button>Clear All</button>
+                <Person 
+                // <h2>Todays birthday</h2>
+                 name={data.name} 
+                
+                />
             </div>
         </main>
     )
-};
+}
+
+const Person = (props) =>{
+    const {name, age, image } = props;
+    return(
+        <div>
+            <h3>{props.name}</h3>
+            <h3>{props.age}</h3>
+            <h3>{props.image}</h3>
+        </div>
+    )
+}
+;
 
 export default Birthday
