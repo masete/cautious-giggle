@@ -1,24 +1,26 @@
 import './index.scss'
 // import { useState } from 'react';
-import data from './data'
+import datas from './data'
 
 const Birthday = () =>{
 
     return(
         <main>
             <div className='container'>
-                <Person 
-                // <h2>Todays birthday</h2>
-                 name={data.name} 
                 
-                />
+                {datas.map((data) => {
+                    const { name, age, image } = data
+                    return <Person data={data.age}></Person>
+                })}
+                console.log(data)
+                
             </div>
         </main>
     )
 }
 
 const Person = (props) =>{
-    const {name, age, image } = props;
+    const { name, age, image } = props.data;
     return(
         <div>
             <h3>{props.name}</h3>

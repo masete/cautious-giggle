@@ -1,4 +1,4 @@
-export default [
+datas= [
     {
       id: 1,
       name: 'Bertie Yates',
