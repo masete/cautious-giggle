@@ -62,11 +62,15 @@ const Birthday = () =>{
 const Person = (props) =>{
     const { name, age, image } = props.data;
     return(
-        <div>
-            <h3>{name}</h3>
-            <h3>{age}</h3>
-            <img src={image} alt='' />
-        </div>
+        <article className='data'>
+            
+            <img src={image} alt='nae' />
+            <div>
+                <h4>{name}</h4>
+                <p>{age} Years</p>
+            </div>
+            
+        </article>
     )
 }
 ;
