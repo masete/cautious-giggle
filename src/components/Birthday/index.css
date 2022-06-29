@@ -43,8 +43,12 @@ Variables
     --fixed-width: 450px;
     --clr-pink: #f28ab2;
   }
-
-
+  /*
+  =============== 
+  Global Styles
+  ===============
+  */
+  
   *,
   ::after,
   ::before {
@@ -145,30 +149,29 @@ Variables
     padding: 1.5rem 2rem;
     box-shadow: var(--dark-shadow);
   }
-
   .container h3 {
     font-weight: normal;
     text-transform: none;
     margin-bottom: 2rem;
   }
-  .data {
+  .person {
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 0.75rem;
     margin-bottom: 1.5rem;
     align-items: center;
   }
-  .data img {
+  .person img {
     width: 75px;
     height: 75px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: var(--light-shadow);
   }
-  .data h4 {
+  .person h4 {
     margin-bottom: 0.35rem;
   }
-  .data p {
+  .person p {
     margin-bottom: 0;
   }
   .container button {
@@ -186,10 +189,4 @@ Variables
     outline: 1px solid rgba(242, 138, 178, 0.8);
     cursor: pointer;
   }
-// .birthday-card{
-//     top: 40%;
-//     border: 1px solid black;
-//     height: 800px;
-//     width: 400px;
-
-// }
+  
