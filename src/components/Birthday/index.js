@@ -46,13 +46,15 @@ const Birthday = () =>{
 
     return(
         <main>
-            <div className='container'>
-                
+            <section className='container'>
+                <h3>Birthdays today</h3>
                 {people.map((data) => {
                     return <Person key={data.id} data={data}></Person>
                 })}
+
+                <button onClick={() => console.log('you clicked, yes u did')}>Clear List</button>
                 
-            </div>
+            </section>
         </main>
     );
 }

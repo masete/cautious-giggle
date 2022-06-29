@@ -151,14 +151,14 @@ Variables
     text-transform: none;
     margin-bottom: 2rem;
   }
-  .person {
+  .data {
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 0.75rem;
     margin-bottom: 1.5rem;
     align-items: center;
   }
-  .person img {
+  .data img {
     width: 75px;
     height: 75px;
     object-fit: cover;
